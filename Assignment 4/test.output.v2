@@ -1,0 +1,160 @@
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p0.pddl
+...
+Begin plan
+1 (pick-up s)
+2 (spray-paint a s red)
+3 (put-down s)
+End plan
+...
+Total elapsed time:   0.00 seconds
+Time in milliseconds: 1
+
+
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p1.pddl
+...
+Begin plan
+1 (pick-up brush)
+2 (load-brush brush can red)
+3 (brush-paint a red brush)
+4 (put-down brush)
+End plan
+...
+Total elapsed time:   0.01 seconds
+Time in milliseconds: 5
+
+
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p2.pddl
+...
+Begin plan
+1 (unstack b a)
+2 (put-down b)
+3 (pick-up sprayer1)
+4 (spray-paint b sprayer1 blue)
+5 (put-down sprayer1)
+6 (pick-up brush1)
+7 (load-brush brush1 can1 red)
+8 (brush-paint a red brush1)
+9 (wash-brush brush1 red w)
+10 (stack brush1 sprayer1)
+End plan
+...
+Total elapsed time:   0.15 seconds
+Time in milliseconds: 147
+
+
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p3.pddl
+...
+Begin plan
+1 (pick-up sprayer3)
+2 (spray-paint b sprayer3 blue)
+3 (put-down sprayer3)
+4 (pick-up sprayer1)
+5 (spray-paint a sprayer1 red)
+6 (stack sprayer1 w)
+7 (pick-up sprayer2)
+8 (spray-paint c sprayer2 green)
+9 (put-down sprayer2)
+End plan
+...
+Total elapsed time:   0.72 seconds
+Time in milliseconds: 720
+
+
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p4.pddl
+...
+Begin plan
+1 (unstack c b)
+2 (put-down c)
+3 (unstack b a)
+4 (put-down b)
+5 (pick-up sprayer)
+6 (spray-paint a sprayer red)
+7 (put-down sprayer)
+8 (pick-up brush)
+9 (load-brush brush can1 green)
+10 (brush-paint b green brush)
+11 (wash-brush brush green w)
+12 (load-brush brush can2 blue)
+13 (brush-paint c blue brush)
+14 (wash-brush brush blue w)
+15 (put-down brush)
+16 (pick-up b)
+17 (stack b c)
+18 (pick-up a)
+19 (stack a b)
+End plan
+...
+Total elapsed time:   2.77 seconds
+Time in milliseconds: 2767
+
+
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p5.pddl
+...
+Begin plan
+1 (unstack brush w)
+2 (put-down brush)
+3 (unstack w can2)
+4 (put-down w)
+5 (unstack can2 can1)
+6 (put-down can2)
+7 (unstack can1 sprayer)
+8 (put-down can1)
+9 (unstack c b)
+10 (put-down c)
+11 (unstack b a)
+12 (put-down b)
+13 (pick-up sprayer)
+14 (spray-paint a sprayer red)
+15 (put-down sprayer)
+16 (pick-up brush)
+17 (load-brush brush can1 green)
+18 (brush-paint b green brush)
+19 (wash-brush brush green w)
+20 (load-brush brush can2 blue)
+21 (brush-paint c blue brush)
+22 (wash-brush brush blue w)
+23 (stack brush can1)
+24 (pick-up b)
+25 (stack b c)
+26 (pick-up a)
+27 (stack a b)
+End plan
+...
+Total elapsed time:   26.14 seconds
+Time in milliseconds: 26139
+
+
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p6.pddl
+...
+Begin plan
+1 (unstack c b)
+2 (put-down c)
+3 (unstack b a)
+4 (put-down b)
+5 (pick-up b2)
+6 (load-brush b2 c3 blue)
+7 (brush-paint c blue b2)
+8 (stack b2 c3)
+9 (pick-up b3)
+10 (load-brush b3 c1 red)
+11 (brush-paint a red b3)
+12 (put-down b3)
+13 (pick-up b1)
+14 (load-brush b1 c2 green)
+15 (brush-paint b green b1)
+16 (put-down b1)
+17 (pick-up b)
+18 (stack b c)
+19 (pick-up a)
+20 (stack a b)
+End plan
+...
+Total elapsed time:   17.62 seconds
+Time in milliseconds: 17618

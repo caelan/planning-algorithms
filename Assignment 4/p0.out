@@ -1,0 +1,48 @@
+blackbox version 43
+command line:  ./blackbox -o domain.pddl -f p0.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 10.000000  graphplan
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p0.pddl
+Problem name: 0
+Facts loaded.
+time: 1, 20 facts and 7 exclusive pairs.
+time: 2, 23 facts and 22 exclusive pairs.
+Goals reachable at 2 steps but mutually exclusive.
+time: 3, 23 facts and 18 exclusive pairs.
+Goals first reachable in 3 steps.
+163 nodes created.
+
+####################################################
+goals at time 4:
+  arm-empty colored_a_red 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Sat
+Iteration was 13
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (pick-up sprayer)
+2 (spray-paint a sprayer red)
+3 (stack sprayer a)
+End plan
+----------------------------------------------------
+
+3 total actions in plan
+0 entries in hash table, 
+2 total set-creation steps (entries + hits + plan length - 1)
+3 actions tried
+
+####################################################
+Total elapsed time:   0.00 seconds
+Time in milliseconds: 1
+
+####################################################

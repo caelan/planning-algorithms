@@ -1,0 +1,39 @@
+Restack Blocks
+9 iterations
+Took 0.0019998550415 seconds for plan
+Found plan with cost 6
+Unstack('blockA', 'blockB')
+PutDown('blockA',)
+Unstack('blockB', 'blockC')
+Stack('blockB', 'blockA')
+PickUp('blockC',)
+Stack('blockC', 'blockB')
+
+Paint Blocks 1
+30 iterations
+Took 0.00600004196167 seconds for plan
+Found plan with cost 4
+PickUp('brush',)
+LoadBrush('brush', 'redPaintCan', 'red')
+BrushPaint('blockA', 'brush', 'red')
+Stack('brush', 'blockA')
+
+Paint Blocks 2
+83408 iterations
+Took 37.0739998817 seconds for plan
+Found plan with cost 10
+Unstack('blockB', 'blockA')
+PutDown('blockB',)
+PickUp('brush',)
+LoadBrush('brush', 'redPaintCan', 'red')
+BrushPaint('blockA', 'brush', 'red')
+WashBrush('brush', 'bucket', 'red')
+PutDown('brush',)
+PickUp('blueSprayer',)
+SprayPaint('blockB', 'blueSprayer', 'blue')
+PutDown('blueSprayer',)
+
+Paint Blocks 3
+100000 iterations
+Took 134.476000071 seconds for plan
+Failed to find a plan

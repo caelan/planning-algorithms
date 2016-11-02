@@ -1,0 +1,50 @@
+;; Block A is on the table, B is on A and C on B.  Cans of red, green
+;; and blue paint are on the table along with three clean brushes.
+;; There is no water bucket.  The goal is to make A red, B green and C
+;; blue and to have A on B, B on C and C on the table and the arm
+;; empty.
+
+(define (problem 6)
+  (:domain hw4)
+  (:objects A B C red-paint-can blue-paint-can green-paint-can brush-1 brush-2 brush-3)
+  (:init (arm-empty)
+	 (is-paint-can red-paint-can)
+	 (is-paint-can blue-paint-can)
+	 (is-paint-can green-paint-can)
+	 (is-brush brush-1)
+	 (is-brush brush-2)
+	 (is-brush brush-3)
+
+	 (paints-color red-paint-can red)
+	 (paints-color blue-paint-can blue)
+	 (paints-color green-paint-can green)
+
+	 (clean brush-1)
+	 (clean brush-2)
+	 (clean brush-3)
+	 (on C B)
+	 (on B A)
+	 (on-table A)
+	 (on-table red-paint-can)
+	 (on-table blue-paint-can)
+	 (on-table green-paint-can)
+	 (on-table brush-1)
+	 (on-table brush-2)
+	 (on-table brush-3)
+
+	 (clear C)
+	 (clear red-paint-can)
+	 (clear blue-paint-can)
+	 (clear green-paint-can)
+	 (clear brush-1)
+	 (clear brush-2)
+	 (clear brush-3)
+	 )
+  (:goal (and (arm-empty)
+	 (colored A red)
+         (colored B green)
+         (colored C blue)
+	 (on A B)
+	 (on B C)
+	 (on-table C)
+	 )))

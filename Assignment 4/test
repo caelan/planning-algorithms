@@ -1,0 +1,18 @@
+#! /bin/csh
+echo "running tests"
+touch test.out
+echo "problem p0"
+./blackbox -o domain.pddl -f p0.pddl >> test.out
+echo "problem p1"
+./blackbox -o domain.pddl -f p1.pddl >> test.out
+echo "problem p2"
+./blackbox -o domain.pddl -f p2.pddl >> test.out
+echo "problem p3"
+./blackbox -o domain.pddl -f p3.pddl >> test.out
+echo "problem p4"
+./blackbox -o domain.pddl -f p4.pddl >> test.out
+echo "problem p5"
+./blackbox -o domain.pddl -f p5.pddl >> test.out
+echo "problem p6"
+./blackbox -o domain.pddl -f p6.pddl >> test.out
+

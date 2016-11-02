@@ -1,0 +1,9 @@
+Caelan Garrett
+6.S078 Assignment 4
+10/23/13
+
+I am reuploading the assignment because I missed the email where we were supposed to include a brief write up.
+
+I downloaded the Linux binarires for blackbox onto the LIS Vaio I am borrowing. While the shorter computations worked fine, parts 5 and 6 ran for >30 minutes and crashed by segmentation fault every time I ran them... Otherwise, the planner gave good plans for parts 0-4. I ran Geoff LaLonde's part 5 on my computer, and it also crashed by segmentation fault even though it worked on his computer.
+
+I created predicates for testing if an object is a certain color, if an object can color other objects a certain color (including paint cans), if an object is clean, and if an object is of a certain type. Additionally, I created four new actions of spray painting, painting by brush, dipping the brush in paint, and washing the brush. Each action works as one would expect (a sprayer can only spray paint, washing removes the previous color and cleans the brush, etc). 
